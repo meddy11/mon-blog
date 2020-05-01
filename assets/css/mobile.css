@@ -1,78 +1,158 @@
-@media(max-width:768px)
+@media screen and (max-width:768px)
 {
+    html{
+        scroll-behavior: smooth;
+    }
+    .conteneurBodyone{
+        display: none;
+    }
     body{
+        height: 100vh;
         margin: 0;
         padding: 0;
     }
-    main{
-        padding: 15px;
-    }
     header{
-        max-height: 50vh;
+        background: whitesmoke;
+        box-shadow: 6px 0px 15px #000;
+        height: 7vh;
+        position: fixed;
         width: 100%;
+    }
+    main{
+        padding: 20px;
+    }
+    #hamburger-content{
+        display: none;
+    }
+    #hamburger-button, #hamburger-sidebar,
+    .hamburger-activated  #hamburger-overlay{
+        display: block;
+    }
+    .hamburger-activated #hamburger-sidebar {
+        transform: translateX(0);
+    }
+    /* presentationDUBlog */
+    .presentationDUBlog {
+        text-align: justify;
+        margin: 60px auto;
+        width: 100%;
+    }
+    .presentationDUBlog h1{
+        text-align: center;
     }
     /* BANNER */
-    header .banner{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 20vh;
-    }    
-    .banner > div{
-        background: #0000003d;
-        height: 30%;
-        width: 40%;
+    .banner{
+        height: 35vh;
+        margin-top: 6vh;
     }
-    .banner > div + div{
-        background: #0000003d;
-        height: 35%;
-        width: 80%;
+    .slider{
+        width: 300px;
+        overflow: hidden;
+        margin: 35px auto;
     }
-    /* NAV */
-    header .footerBanner{
-        width: 100%;
-        height: 10vh;
-        border-bottom: 1px solid #0000003d;
+    .slides{
+        width: calc(300px * 3);
+        animation: glisse 10s infinite;
     }
-    header .footerBanner ul{
+    .slide{
+        float: left;
+    }
+    .slides > img{
+        border-radius: 0;
+    }
+    /* lien Reseaux */
+    .lienReseaux ul{
         padding: 0;
         list-style: none;
         display: flex;
         justify-content: space-around;
     }
-    #footer{
-        height: 80vh;
-        background: black;
+    .lienReseaux li::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
     }
-    /* style paragraphe */
-    p{
-        color: #4d4e68;
-        font-style: italic;
-        width: 100%;
-        text-align: justify;
-        font-size: 1.3em;
-        line-height: 2rem;
+    .lienReseaux li:first-child::before{
+        background-image: url('../img/whatsapp-icon-square.svg');
     }
-    a{
-        text-decoration: none;
-        color: #4d4e68;
-    }
-    h1, h2, h3 {
-        font-family: fantasy;
-        letter-spacing: 2px;
-        font-size: 1.6rem; 
-        color: #1638a0;
+    /* NIMAITION SLIDES */
+    @keyframes glisse{
+        0%{
+            transform: translateX(0);
+        }
+        10%{
+            transform: translateX(0);
+        }
+        33%{
+            transform: translateX(-300px);
+        }
+        43%{
+            transform: translateX(-300px);
+        }
+        66%{
+            transform: translateX(-600px);
+        }
+        76%{
+            transform: translateX(-600px);
+        }
+        100%{
+            transform: translateX(0);
+        }
     }
     img{
+        border-radius: 10px;
         max-width: 100%;
-        max-height: 50%;
-    } 
-    .imgBody h1{
-        display: none;
-    }  
-    .imgBodyleft h1{
-        display: none;
-    } 
+    }
+    .conteneurAside{
+        margin-top: 45px;
+        max-width: 100%;
+    }
+    a{
+        color: #00a6c2;
+        text-decoration: none;
+    }
+    h4 {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        color: #00a6c2;
+        font-weight: 400;
+        padding: 10px 0;
+        font-size: 14px;
+        letter-spacing: 3.2px;
+    }
+    h3{
+        margin: 0;
+        text-align: justify;
+        max-width: 100%;
+        color: #393939;
+    }
+    p{
+        font-style: italic;
+        color: #393939;  
+    }
+    /* SPAN MENU */
+    span::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+    }
+    span:first-child::before{
+        background-image: url('../img/icon\ \(1\).svg');
+    }
+    .footerArticle{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn-partage{
+        border-radius: 5px;
+        border: none;
+        background: #00a6c2;
+        color: #fff;
+    }
 }

@@ -1,182 +1,79 @@
-@media(min-width:769px)
-{
+    html{
+        scroll-behavior: smooth;
+    }
     body{
         margin: 50px;
         padding: 0;
-        background-color: #dbdbdb;
-        box-shadow: 0px 20px 5px  black;
     }
-    header{
-        /* background: red; */
-        max-height: 30vh;
-        max-width: 100%;
+    /* MENU BURGER */
+    #hamburger, #hamburger-content{
+        display: inline;
+    }
+    #hamburger-button{
+        display: none;
+        cursor: pointer;
+        background: none;
+        border: none;
+        font-size: 30px;
+        padding: 0;
+        vertical-align: top;
+        line-height: 47px;
+        float: right;
+        margin-right: 32px;
+    }
+    #hamburger-overlay{
+        display: none;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, .4);
+    }
+    #hamburger-sidebar{
+        display: none;
+        position: fixed;
+        width: 84%;
+        z-index: 20;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #333333b8;
+        transform: translateX(-100%);
+        transition: transform .2s ease-out;
+    }
+    #hamburger-siderbar li{
+        display: block;
+    }
+    #hamburger-sidebar-header{
+        background: url('../img/illustration_back-end-front-end.png') center;
+        height: 128px;
+        background-size: cover;
+    }
+    #hamburger-sidebar-body{
+        padding: 16px 8px;
+    }
+    #hamburger-sidebar-body ul{
+        list-style: none;
+    }
+    #hamburger-sidebar-body li::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 24px;
+        height: 24px;
+        margin-right: 16px;
+        margin-bottom: 4px;
+        border: 1px solid;
+    }
+    #hamburger-sidebar-body li:first-child::before{
+        background-image: url('../img/1.jpg');
+    }
+    #hamburger-sidebar-body li:nth-child(2)::before{
+        background-image: url('../img/1.jpg');
     }
     /* BANNER */
-    header .banner{
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 20vh;
-        /* background: rosybrown; */
-    }
-    .banner > div{
-        background: #0000003d;
-        height: 30%;
-        width: 40%;
-    }
-    .banner > div + div{
-        background: #0000003d;
-        height: 80%;
-        width: 50%;
-    }
-    /* NAV */
-    header .footerBanner{
-        width: 100%;
-        height: 10vh;
-        border-bottom: 1px solid #0000003d;
-    }
-    header .footerBanner ul{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-        padding-top: 2%;
-        margin: 0;
-    }
-    /* BODY ONE */
-    #bodyOne{
-        height: 100vh;
-        /* background: blue; */
-    }
-    .conteneurBodyone{
-        padding-top: 5%;
-        display: flex;
-        justify-content: center;
-    }
-    #bodyOne .imgBody{
-        width: 50vw;
-        height: 100%;
-        border-radius: 2px;
-        background-image: linear-gradient(to bottom,#0f0e0e00,#000000eb), url('../img/illustration_back-end-front-end.png');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .imgBody h1{
-        padding-left: 10px;
-        font: 3em sans-serif;
-        margin-top: 50vh;
-    }
-    #bodyOne .imgBodyleft{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        width: 35vw;
-    }
-    .imgBodyleft > div{
-        width: 30vw;
-        height: 35vh;
-        background-image: linear-gradient(to bottom,#0f0e0e00,#000000eb), url('../img/stages.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .imgBodyleft h1{
-        padding-left: 10px;
-        font: 1.5em sans-serif;
-        margin-top: 20vh;
-    }
-    .imgBodyleft > div:nth-child(2){
-        width: 30vw;
-        height: 35vh;
-        border: 1px solid black;
-        background-image: linear-gradient(to bottom,#0f0e0e00,#000000eb), url('../img/Image\ d’iOS\ \(7\).jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    /* BODY TWO */
-    #bodyTwo{
-        height: auto;
-        /* background: blueviolet; */
-    }
-    .conteneurTwo{
-        padding-top: 5%;
-        display: flex;
-        justify-content: space-around;
-    }
-    .imgbodyTwo{
-        width: 15vw;
-        height: 100vh;
-        /* background: brown; */
-    }
-    .bodyTworigth{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 55vw;
-        height: 70vh;
-        /* background: red; */
-    }
-    .bodyTworigth > div{
-        display: flex;
-        width: 100%;
-        height: 25vh;
-    }
-    .bodyTworigth > div:nth-child(2){
-        display: flex;
-        width: 100%;
-        height: 25vh;
-        /* background: blue; */
-    }
-    .bodyTworigth > div:nth-child(3){
-        border: 1px solid black;
-        display: flex;
-        width: 100%;
-        height: 25vh;
-        background: white;
-    }
-    /* BODY TREE */
-    #bodytree{
-        height: 100vh;
-        /* background: tomato; */
-    }
-    .conteneurTree{
-        padding-top: 5%;
-        display: flex;
-        justify-content: center;
-    }
-    .conteneurTree > .bodyTreeleft{
-        width: 50%;
-        height: auto;
-    }
-    .conteneurTree > .bodyTreeright{
-        width: 50%;
-        height: auto;    
-    }
-    /* FOOTER */
-    #footer{
-        height: 80vh;
-        background: black;
-    }
-    /* IMG TAILLE */
-    img{
-        max-width: 100%;
-        max-height: 100%;
-    }
-    h3{
-        padding-left: 5%;
-        color: black;
-    }
-    p{
-        padding-left: 5%;
-        width: 90%;
-    }
-    .imgbodyTwo a{
-        font: 1.2em sans-serif;
-        padding: 5px;
-        text-decoration: none;
-        color: red;
-    }
     
-}
+    
+
