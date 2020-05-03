@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,121 +9,193 @@
 </head>
 <body>
     <header>
-        <div class="banner">
-            <div>LOGO</div>
-            <div>BANNER</div>
+        <div class="logo">
+            <a href="#" id="logo">#Actnet</a>
         </div>
-        <div class="footerBanner">
-            <nav>
-                <ul>
-                    <li>ACCEUIL</li>
-                    <li>PORFOLIO</li>
-                    <li><a href="assets/pages/index.html">INTERVIEW</a></li>
-                    <li>PORTFOLIO</li>
-                </ul>
-            </nav>
+        <div id="hamburger">
+            <div id="hamburger-content">
+                <nav>
+                    <ul>
+                        <li><a href="assets/pages/index1.html">INTERVIEW</a></li>
+                        <li><a href="assets/pages/index2.html">DECOUVERTE</a></li>
+                        <li><a href="assets/pages/index3.html">ACTUALITE</a></li>
+                        <li><a href="assets/pages/index4.html">SPORT</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <button id="hamburger-button"><span>MENU</span>&#9776;</button>
+            <div id="hamburger-sidebar">
+                <div id="hamburger-sidebar-header"></div>
+                <div id="hamburger-sidebar-body"></div>
+            </div>
+            <div id="hamburger-overlay"></div>
         </div>
     </header>
+    <!-- MAIN -->
     <main>
+        <div class="presentationDUBlog">
+            <div>
+                <h1>#Actnet</h1>
+                <P>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit possimus corporis obcaecati ipsum alias ex suscipit, optio id esse nostrum minima laboriosam hic asperiores soluta dolorum cumque, perferendis dignissimos.
+                    <br />
+                </P>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="articleOne">
+                <div></div>
+            </div>
+            <div class="articleTwo">
+                <div><img src="assets/img/Image d’iOS (7).jpg" alt=""></div>
+                <div><img src="assets/img/Image d’iOS (7).jpg" alt=""></div>
+            </div>
+        </div>
+        <!-- ONE BODY NON DISPONIBLE SUR MOBILE-->
         <section id="bodyOne">
-            <div class="conteneurBodyone">
-                <div class="imgBody">
-                    <aside><a href="#"><h1>Différence entre le développeur Front-End et le développeur Back-End ?</h1></a></aside>
+
+        </section>
+        <!-- TWO BODY -->
+        <section id="bodyTwo">
+            <div class="title-section">
+                <div>
+                    <h1>Articles récents</h1>
+                    <div class="bg-color"></div>
                 </div>
-                <div class="imgBodyleft">
-                    <div>
-                        <aside><a href="#"><h1>Orientation & Métiers<br/>Développeur / Développeuse web</h1></a></aside>
-                    </div>
-                    <div>
-                        <aside><a href="#"><h1>INTERVIEW</h1></a></aside>
-                    </div>
+                <div class="date-publication">
+                    <p>
+                        <time class="date" datetime="20-05-02">20 mai 2020</time>
+                    </p>
                 </div>
             </div>
-        </section>
-        <section id="bodyTwo">
+
             <div class="conteneurTwo">
                 <div class="bodyTworigth">
                     <div>
-                        <img src="assets/img/1.jpg" alt="">
-                        <div>
-                            <a href="#"><h3>Développeur / Développeuse web</h3></a>
-                        <p>À partir du cahier des charges rédigé par le chef de projet en fonction des désirs du client, le développeur web / la développeuse web analyse les besoins, choisit la solution technique la mieux adaptée et développe les fonctionnalités du site web ou de l'application web. Pour cette dernière étape, il rédige des lignes de code.</p>
+                        <div class="imgArticle"><img src="assets/img/LOGO.jpg" alt=""></div>
+                        <div class="h-One">
+                            <a href="assets/pages/index2.html"><aside>Mapar start-up Gabonaise qui propose une solution de gestion , nettoyage et le crecyclage des ordures... </aside></a>
+                            <div>
+                                <a href="assets/pages/index2.html"><h4>DECOUVERTE</h4></a>
+                            </div>
                         </div>
                     </div>
+
                     <div>
-                        <img src="assets/img/developpeur-front-end-300x150.jpg" alt="">
-                        <div>
-                            <a href="#"><h3>Evolutions de carrière d'un Développeur / Développeuse web</h3></a>
-                            <p>Un développeur peut se spécialiser dans un secteur d’activité précis : jeux vidéo, e-marketing, édition en ligne, banque, assurance…
-                                Avec de l’expérience et du savoir-faire, il peut encadrer une équipe de développeurs ou devenir chef de projet technique.</p>
+                        <div class="imgArticle"><img src="assets/img/imgportfolio2.jpg" alt=""></div>
+                        <div class="h-One">
+                            <a href="assets/pages/index1.html"><aside>Je suis MIHINDOU NZE Arsene Steed Développeur Web et Web mobile à l'école 241.Passionné du code et des difficultes, j'ai l'humble avis de penser que le code est un atout idéal pour nous aider à apporter des solutions aux problèmes que nous pouvons rencontrer dans la vie de tous les jours et même plus.</aside></a>
+                            <div>
+                                <a href="assets/pages/index1.html"><h4>INTERVIEW</h4></a>
+                            </div>
                         </div>
                     </div>
-                   <!--<div>
-                        <img src="assets/img/" alt="">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est cum illum sed, voluptates adipisci, quia in nesciunt magnam ipsam earum quae amet harum deleniti! Rem quam consequuntur iusto natus repellat!</p>
-                    </div>-->
-                </div>
-                <div class="imgbodyTwo">
-                    <h1>INTERVIEW</h1>
-                    <img src="assets/img/Image d’iOS (6).jpg" alt="">
-                    <p>
-                        Je suis MIHINDOU NZE Arsene Steed .
-                        Développeur Web à l' école 241 <br><a href="assets/pages/index.html">Lire la suite...</a>
-                    </p>
+
+                    <div>
+                        <div class="imgArticle"><img src="assets/img/img-7.jpg" alt=""></div>
+                        <div class="h-One">
+                            <a href="assets/pages/index1.html"><aside>Le gouvernement a annoncé le premier cas de coronavirus au
+                                Gabon et a pris des mesures circonstancielles afin de gérer et contrôler la
+                                situation. Nombreux sont les personnes qui ne prennent pas conscience
+                                du comportement à avoir et la conduite à tenir pendant ce temps d’alerte.
+                                En cas de comportement irresponsable, toute une zone géographique
+                                peut se trouver compromise. Il est donc important de sensibiliser les gens,
+                                les éduquer sur le comportement responsable à adopter. Tout cela passe
+                                par la mise à disposition d’informations utiles et fiables. COVID-19 Infos
+                                s’inscrit comme un canal de diffusion d’informations supplémentaire afin
+                                de tenir la population informée en temps et en heure de tout ce qui a trait
+                                au COVID-19.</aside></a>
+                            <div>
+                                <a href="assets/pages/index3.html"><h4>ACTUALITE</h4></a>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div>
+                        <div class="imgArticle"><img src="assets/img/Image d’iOS (7).jpg" alt=""></div>
+                        <div class="h-One">
+                            <a href="assets/pages/index1.html"><aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse labore molestias repudiandae eius sapiente. Adipisci, veniam consectetur inventore voluptatum sequi mollitia suscipit animi sint et ut vel? Sed, asperiores deserunt.</aside></a>
+                            <div>
+                                <a href="assets/pages/index1.html"><h4>SPORT</h4></a>
+                            </div>
+                        </div>                           
+                    </div>
 
                 </div>
             </div>
         </section>
-        <section id="bodytree">
-            <h1>Différence entre le développeur Front-End et le développeur Back-End ?</h1>
-            <div class="conteneurTree">
-                <div class="bodyTreeleft">
-                    <h2>-Le développeur Front-End</h2>
-                    <p>
-                        Lorsque l'on parle de «Front-End», il s'agit finalement des éléments du site que l'on voit à l'écran et avec lesquels on peut interagir. Ces éléments sont composés de HTML, CSS et de Javascript contrôlés par le navigateur web de l'utilisateur.
-
-                        Les champs de compétence du Front-End peuvent être séparer en deux :<br>
-                        - Le design<br>
-                        - Le développement HTML, CSS, Javascript<br>
-
-                        Le design est traditionnellement réalisé par un web designer qui produit des maquettes graphiques à l'aide de Photoshop ou Fireworks. Cependant de plus en plus de web designers ont franchi la barrière et savent coder en HTML et CSS. Dans certains cas ils sont aussi capables de produire du Javascript.
-
-                        Auparavant lorsque l'on parlait de développeur, on sous-entendait développeur Back-End. Maintenant on s'aperçoit que certains web designers possèdent également des compétences en développement.
-
-                        Le développeur Front-End est donc une personne qui peut être issue du milieu du web design en ayant renforcé ses connaissances en développement. Il peut aussi être un développeur qui a choisi de se spécialiser dans les technologies et langages du Front-End tels que :<br>
-                        - HTML<br>
-                        - CSS<br>
-                        - Javascript<br>
-                        - jQuery<br>
-                        jQuery est un framework javascript, pour simplifier c'est une bibliothèque Javascript qui permet de coder plus vite et plus simplement.
-                        Il existe de nombreuses bibliothèques Javascript plus ou moins complexes et adaptées à différents usages.
-                    </p>
+        <section id="Mapar">
+            <div class="presentationMapar">
+                <a href="#"><h1>Startup MaPar</h1></a>
+            </div>
+            <div class="presentation-statup">
+                <div class="imglogo">
+                    <img src="assets/img/LOGO.jpg" alt="">
                 </div>
-                <div class="bodyTreeright">
-                    <h2>-Le développeur Back-End</h2>
-                    <p>
-                        Le Back-End, c'est un peu comme la partie immergée de l'iceberg. Elle est invisible pour les visiteurs mais représente une grande partie du développement d'un projet web. Sans elle, le site web reste une coquille vide.
-
-                        On peut décomposer le Back-End en trois parties essentielles :<br>
-                        - Un serveur (ou hébergement web)<br>
-                        - Une application (en l’occurrence le site web)<br>
-                        - Une base de données (ou l'on stocke les données de l'application)<br>
-
-                        Le serveur est comme un disque dur accessible 24 heures sur 24, sur lequel les pages du site web sont enregistrées.
-
-                        Pour pouvoir conserver vos mots de passe, vos préférences, votre panier d'achat que vous avez saisi grâce aux éléments de Front-End, il est nécessaire de les enregistrer dans une base de données. La base de données est comparable à un grand tableau avec des colonnes contenant par exemple «nom», «prénom», «mot de passe», «achat en cours». Lors de votre inscription sur un site, votre profil est enregistré dans ce tableau.
-                        Pour pouvoir conserver, traiter, modifier ces données et fournir des informations à jour sur un site internet (comme des actualités, des fiches produits, des images, des vidéos), le développeur Back-End va utiliser des langages de programmation «dynamique».<br>
-                        Les langages les plus utilisés sont PHP, Ruby, Python, SQL. Souvent pour rendre le code plus clair, facilement modifiable et plus simple à maintenir en équipe, le développeur travaille avec des frameworks tels que Cake PHP, Symfony ou Code Igniter.
-                    </p>
+                <div>
+                    <p><strong>MaPar </strong>est une plateforme qui propose une solution la gestion de nettoyage et le crecyclage des ordures de vaux espace vert.</p>
                 </div>
+                <div class="button">  
+                        <a href="#">Commencez</a>
+                </div>    
             </div>
         </section>
         <section id="footer">
             <footer>
-
+                <div class="categoriArsticle">
+                    <div class="title-footer">
+                        <h3>categorie</h3>
+                    </div>
+                    <div class="ulFooter">
+                        <ul>
+                            <li><a href="assets/pages/index1.html">INTERVIEW</a></li>
+                            <li><a href="assets/pages/index2.html">DECOUVERTE</a></li>
+                            <li><a href="assets/pages/index3.html">ACTUALITE</a></li>
+                            <li><a href="assets/pages/index4.html">SPORT</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="title-footer">
+                        <h3>Contacts</h3>
+                    </div>
+                    <div class="ulContats">
+                        <ul>
+                            <li><a href="assets/pages/index1.html">FACEBOOK</a></li>
+                            <li><a href="assets/pages/index2.html">TWEETER</a></li>
+                            <li><a href="assets/pages/index3.html">WHATSAPP</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <form action="formulaireGet.php" method="get">
+                    <p>
+                        <input type="text" name="name" />
+                        <input type="text" name="prenom" />
+                        <input type="submit" value="valider" />
+                    </p>
+                </form>
             </footer>
-        </section>
-        
+        </section> 
     </main>
+    <script>
+        var content = document.querySelector('#hamburger-content');
+        var sidebarBody = document.querySelector('#hamburger-sidebar-body');
+        var button = document.querySelector('#hamburger-button');
+        var overlay =document.querySelector('#hamburger-overlay');
+        var activatedClass = 'hamburger-activated';
+
+        sidebarBody.innerHTML = content.innerHTML;
+
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            this.parentNode.classList.add(activatedClass);
+        });
+        overlay.addEventListener('click', function(e){
+            e.preventDefault();
+
+            this.parentNode.classList.remove(activatedClass);
+        });
+    </script>
 </body>
 </html>
