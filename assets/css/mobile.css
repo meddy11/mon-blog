@@ -1,5 +1,6 @@
 @media screen and (max-width:768px)
 {
+    
     html{
         scroll-behavior: smooth;
     }
@@ -26,9 +27,11 @@
         padding-left: 10px;
         color: #00b034;
     }
+    /************************************************ MAIN *********************************************/
     main{
         padding: 20px;
     }
+    /*********************************************** MENU ****************************************/
     #hamburger-content{
         display: none;
     }
@@ -39,7 +42,7 @@
     .hamburger-activated #hamburger-sidebar {
         transform: translateX(0);
     }
-    /* presentationDUBlog */
+    /************************************ presentationDUBlog **********************************************/
     .presentationDUBlog {
         text-align: center;
         margin: 60px auto;
@@ -64,11 +67,11 @@
         color: white;
         letter-spacing: 2px;
     }
-    /* BANNER */
+    /***************************************************** BANNER **********************************************/
     .banner{
         height: 60vh;
-        /* background: #393939; */
     }
+    /******************************************* BODY TWO *************************************/
     .title-section{
         justify-content: space-between;
         display: flex;
@@ -101,6 +104,10 @@
         justify-content: center;
         align-items: center;
     }
+    /********************************************************* IMG BODY TWO ************************************/
+    #bodyTwo{
+        max-width: 100%;
+    }
     .articleOne > div{
         background-position: center;
         background-size: cover;
@@ -113,12 +120,8 @@
         display: flex;
         width: auto;
         height: 50%;
-        /* background: black; */
         justify-content: space-around;
         align-items: center;
-    }
-    #bodyTwo{
-        max-width: 100%;
     }
     .bodyTworigth > div{
         margin-top: 30px;
@@ -155,7 +158,7 @@
         overflow: hidden;
         color: #00b034;
     }
-    /* PARTIE STARTUP */
+    /**************************************** PARTIE STARTUP *****************************************/
     #Mapar{
         background: black;
         font: 1.1em sans-serif;
@@ -231,4 +234,33 @@
     img{
         max-width: 100%;
     }
+
+    /* IPHONE 6/7/8 PLUS */
+    @media screen and (max-width: 414px)
+    {
+        aside{
+            height: 9vh;
+        }
+    }
+        /* IPHONE 6/7/8 */
+
+    /* IPHONE 5 */
+    @media screen and (max-width: 320px)
+    {
+        aside{
+            height: 15vh;
+        }
+    }
+    @media screen and (max-width: 411px)
+    {
+        aside{
+            height: 11vh;
+        }
+    }
+    @media screen and (max-width: 360px)
+    {
+        aside{
+            height: 15vh;
+        }
+    }            
 }
