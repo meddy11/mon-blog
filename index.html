@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="logo">
-            <a href="#" id="logo">#Actnet</a>
+            <a href="#" id="logo">#AN</a>
         </div>
         <div id="hamburger">
             <div id="hamburger-content">
@@ -32,28 +32,20 @@
         </div>
     </header>
     <!-- MAIN -->
-    <main>
-        <div class="presentationDUBlog">
-            <div>
-                <h1>#Actnet</h1>
-                <P>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam velit possimus corporis obcaecati ipsum alias ex suscipit, optio id esse nostrum minima laboriosam hic asperiores soluta dolorum cumque, perferendis dignissimos.
-                    <br />
-                </P>
-            </div>
-        </div>
-        <div class="banner">
-            <div class="articleOne">
-                <div></div>
-            </div>
-            <div class="articleTwo">
-                <div><img src="assets/img/Image d’iOS (7).jpg" alt=""></div>
-                <div><img src="assets/img/Image d’iOS (7).jpg" alt=""></div>
-            </div>
-        </div>
-        <!-- ONE BODY NON DISPONIBLE SUR MOBILE-->
-        <section id="bodyOne">
 
+    <main>
+        <section class="banner">
+            <div class="conteneurBanner">
+                <h1 class="titleBanner">
+                    <span>#ACTNET-MEDIA</span>
+                    <span>by Arsene Steed</span>
+                </h1>
+                <ul class="ulTitle">
+                    <li><a href="assets/pages/index1.html">FACEBOOK</a></li>
+                    <li><a href="assets/pages/index2.html">TWEETER</a></li>
+                    <li><a href="assets/pages/index3.html">WHATSAPP</a></li>
+                </ul>
+            </div>
         </section>
         <!-- TWO BODY -->
         <section id="bodyTwo">
@@ -74,7 +66,7 @@
                     <div>
                         <div class="imgArticle"><img src="assets/img/LOGO.jpg" alt=""></div>
                         <div class="h-One">
-                            <a href="assets/pages/index2.html"><aside>Mapar start-up Gabonaise qui propose une solution de gestion , nettoyage et le crecyclage des ordures... </aside></a>
+                            <a href="assets/pages/index2.html"><aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsam ipsum omnis voluptate mollitia? Cupiditate quam, error dolor ut, voluptatum fuga, nesciunt quo sapiente odit libero eligendi! Porro, expedita voluptatibus.</aside></a>
                             <div>
                                 <a href="assets/pages/index2.html"><h4>DECOUVERTE</h4></a>
                             </div>
@@ -92,19 +84,9 @@
                     </div>
 
                     <div>
-                        <div class="imgArticle"><img src="assets/img/img-7.jpg" alt=""></div>
+                        <div class="imgArticle"><img src="assets/img/5e8b71664584c.jpg" alt=""></div>
                         <div class="h-One">
-                            <a href="assets/pages/index1.html"><aside>Le gouvernement a annoncé le premier cas de coronavirus au
-                                Gabon et a pris des mesures circonstancielles afin de gérer et contrôler la
-                                situation. Nombreux sont les personnes qui ne prennent pas conscience
-                                du comportement à avoir et la conduite à tenir pendant ce temps d’alerte.
-                                En cas de comportement irresponsable, toute une zone géographique
-                                peut se trouver compromise. Il est donc important de sensibiliser les gens,
-                                les éduquer sur le comportement responsable à adopter. Tout cela passe
-                                par la mise à disposition d’informations utiles et fiables. COVID-19 Infos
-                                s’inscrit comme un canal de diffusion d’informations supplémentaire afin
-                                de tenir la population informée en temps et en heure de tout ce qui a trait
-                                au COVID-19.</aside></a>
+                            <a href="assets/pages/index1.html"><aside>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex iste tenetur blanditiis! Vero maxime atque iure, deleniti officia quisquam nobis, natus autem in enim error. Laudantium consectetur ipsa minus.</aside></a>
                             <div>
                                 <a href="assets/pages/index3.html"><h4>ACTUALITE</h4></a>
                             </div>
@@ -133,7 +115,7 @@
                     <img src="assets/img/LOGO.jpg" alt="">
                 </div>
                 <div>
-                    <p><strong>MaPar </strong>est une plateforme qui propose une solution la gestion de nettoyage et le crecyclage des ordures de vaux espace vert.</p>
+                    <p><strong>MaPar </strong>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum, molestiae eius. Illo minima, ipsum minus aspernatur sequi, id impedit doloremque numquam saepe consequatur ipsam non at beatae? Libero, necessitatibus commodi?</p>
                 </div>
                 <div class="button">  
                         <a href="#">Commencez</a>
@@ -167,35 +149,9 @@
                         </ul>
                     </div>
                 </div>
-                <form action="formulaireGet.php" method="get">
-                    <p>
-                        <input type="text" name="name" />
-                        <input type="text" name="prenom" />
-                        <input type="submit" value="valider" />
-                    </p>
-                </form>
             </footer>
         </section> 
     </main>
-    <script>
-        var content = document.querySelector('#hamburger-content');
-        var sidebarBody = document.querySelector('#hamburger-sidebar-body');
-        var button = document.querySelector('#hamburger-button');
-        var overlay =document.querySelector('#hamburger-overlay');
-        var activatedClass = 'hamburger-activated';
-
-        sidebarBody.innerHTML = content.innerHTML;
-
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-
-            this.parentNode.classList.add(activatedClass);
-        });
-        overlay.addEventListener('click', function(e){
-            e.preventDefault();
-
-            this.parentNode.classList.remove(activatedClass);
-        });
-    </script>
+    <script type="text/javascript" src="main.js"></script>
 </body>
 </html>

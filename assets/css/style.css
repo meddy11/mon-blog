@@ -66,13 +66,12 @@
         height: 24px;
         margin-right: 16px;
         margin-bottom: 4px;
-        border: 1px solid;
     }
     #hamburger-sidebar-body li:first-child::before{
-        background-image: url('../img/1.jpg');
+        background-image: url('../img/sports-and-competition.svg');
     }
     #hamburger-sidebar-body li:nth-child(2)::before{
-        background-image: url('../img/1.jpg');
+        background-image: url('../img/arrows.svg');
     }
     /* BANNER */
     
